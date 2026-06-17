@@ -71,7 +71,8 @@ linters:
           arguments:
             - allowNoDefault
         - name: exported
-          disabled: true # TODO
+          exclude:
+            - "**/internal/**" # TODO: enable for internal packages, too?
         - name: flag-parameter
           disabled: true
         - name: function-length
