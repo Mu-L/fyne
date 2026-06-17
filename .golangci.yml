@@ -85,7 +85,9 @@ linters:
         - name: max-public-structs
           disabled: true
         - name: package-comments
-          disabled: true # TODO
+          exclude:
+            - "**/cmd/**"
+            - "**/internal/**"
         - name: package-naming
           disabled: true # TODO
         - name: unchecked-type-assertion
