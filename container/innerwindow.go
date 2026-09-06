@@ -156,7 +156,7 @@ func (w *InnerWindow) SetActive(active bool) {
 	w.Refresh()
 }
 
-// SetContent replaces the first [fyne.CanvasObject] of thw window’s content with the dpecified one.
+// SetContent replaces the first [fyne.CanvasObject] of thw window’s content with the specified one.
 // The window must have a non-empty content.
 func (w *InnerWindow) SetContent(obj fyne.CanvasObject) {
 	w.Content.Objects[0] = obj
